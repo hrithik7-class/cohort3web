@@ -238,6 +238,7 @@
 //casting with type assertion <>
 // let x = "num";
 // console.log(<string> x)
+
 //class 
 var Person = /** @class */ (function () {
     function Person(name, age) {
