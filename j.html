@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+
+    <h1 id="text-1">hello</h1>
+ <input type="text"/><button onclick="addfunction()">Add</button>
+
+    <div>
+        <h2 id="text-3">nano work</h2>
+    </div>
+    <script>
+        function addfunction(){
+            let inputvalue = document.querySelector("input").value;
+            let h1 =document.getElementById("text-1");
+            h1.innerText = inputvalue;
+            
+        }
+    </script>
+    
+</body>
+</html>
+
+/////
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <input type="text" id="inputField" >
+    <button id="alertButton">Show Alert</button>
+    <button onclick="deleteTodo()">del</button>
+    
+
+    <script>
+        let todos =[]
+        function addTodo(){
+            todos.push({
+                title:document.querySelector("input").value,
+
+            })
+            render();
+        }
+        console.log(todos);
+        console.log(todos.length);
+        console.log(addTodo)
+        function render(){
+            let div1= document.createElement("div");
+
+            let h1 = document.createElement("h1");
+            let btn = document.createElement("button");
+
+            h1.textContent = todos[todos.length-1].title;
+            btn.textContent = "Delete";
+           
+
+            div1.appendChild(h1);
+            div1.appendChild(btn);
+
+            document.body.appendChild(div1);
+
+
+                    
+        }  
+        let btnClk = document.getElementById("alertButton"); 
+        btnClk.addEventListener("click",addTodo);
+
+        function deleteTodo(){
+            todos.pop();
+            render();
+        }
+         
+    </script>
+</body>
+</html>
+ -->
