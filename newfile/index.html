@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="ans"></h1>
+  <input type="text" id="num1" />
+  <input type="text" id="num2"/>
+  <button onclick="click1()">Click</button>
+
+    <script>
+
+        async function click1(){
+           const  a = document.getElementById("num1").value;
+           const  b = document.getElementById("num2").value;
+           await  fetch("http://localhost:4000",{
+            method:"POST",
+            headers: {
+                        "Content-Type": "application/json"
+                    },
+             body: JSON.stringify({ a: a, b: b }),
+            })
+        } 
+    </script>
+</body>
+</html>
